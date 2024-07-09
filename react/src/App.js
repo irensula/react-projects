@@ -12,6 +12,19 @@ import Calculator from './components/Calculator.jsx';
 import Card from './components/Card.jsx';
 import contacts from './contacts.js';
 
+function createCard(contact) {
+  return (
+    <Card 
+      key={contact.id}
+      id={contact.id}
+      name={contact.name}
+      img={contact.imgURL}
+      tel={contact.phone}
+      email={contact.email}
+    />
+  );
+}
+
 function App() {
   return (
     <div>
@@ -30,8 +43,9 @@ function App() {
       <Calculator />
 
       <Heading />
-      
-      <Card 
+      {contacts.map(createCard)}
+
+      {/* <Card 
         name = {contacts[0].name}
         img={contacts[0].imgURL}
         tel={contacts[0].phone}
@@ -48,7 +62,7 @@ function App() {
         img={contacts[2].imgURL}
         tel={contacts[2].phone}
         email={contacts[2].email}
-      />
+      /> */}
 
       <Footer />
 
