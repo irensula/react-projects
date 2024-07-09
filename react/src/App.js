@@ -11,6 +11,7 @@ import Math from './components/Math.jsx';
 import Calculator from './components/Calculator.jsx';
 import Card from './components/Card.jsx';
 import contacts from './contacts.js';
+import notes from './notes.js';
 
 function createCard(contact) {
   return (
@@ -30,7 +31,14 @@ function App() {
     <div>
       <Header />
 
-      <Note />
+      {notes.map(noteItem => 
+        (
+          <Note 
+            key={noteItem.key}
+            title={noteItem.title}
+            content={noteItem.content}
+          />
+        ))}
 
       <Greeting />
     
