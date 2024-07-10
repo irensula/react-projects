@@ -12,6 +12,7 @@ import Calculator from './components/Calculator.jsx';
 import Card from './components/Card.jsx';
 import contacts from './contacts.js';
 import notes from './notes.js';
+import Time from './components/Time.jsx';
 
 function createCard(contact) {
   return (
@@ -71,7 +72,7 @@ function App() {
         tel={contacts[2].phone}
         email={contacts[2].email}
       /> */}
-
+      <Time />
       <Footer />
 
   </div>
