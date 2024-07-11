@@ -1,18 +1,15 @@
 import './App.css';
-import UsernameForm from './UsernameForm';
-import SignupForm from './SignupForm';
-import BetterSignupForm from './BetterSignupForm';
-import ShoppingList from './ShoppingList';
-import ReactHookForm from './ReactHookForm';
+import Form from './components/Form';
+import Formnew from './components/Formnew';
+
+// let isLoggeIn = true;
+let userIsRegistered = false;
 
 function App() {
   return (
-    <div className="App">
-      {/* <ReactHookForm /> */}
-      <ShoppingList />
-      {/* <BetterSignupForm />
-      <UsernameForm />
-      <SignupForm /> */}
+    <div className='container'>
+      <Form isRegistered={userIsRegistered}/>
+      <Formnew />
     </div>
   );
 }
