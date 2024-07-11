@@ -13,6 +13,7 @@ import Card from './components/Card.jsx';
 import contacts from './contacts.js';
 import notes from './notes.js';
 import Time from './components/Time.jsx';
+import Destructuring from './components/Destructuring.jsx';
 
 function createCard(contact) {
   return (
@@ -73,6 +74,7 @@ function App() {
         email={contacts[2].email}
       /> */}
       <Time />
+      <Destructuring />
       <Footer />
 
   </div>
