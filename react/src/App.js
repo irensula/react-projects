@@ -14,6 +14,7 @@ import contacts from './contacts.js';
 import notes from './notes.js';
 import Time from './components/Time.jsx';
 import Destructuring from './components/Destructuring.jsx';
+import Todolist from './components/Todolist.jsx';
 
 function createCard(contact) {
   return (
@@ -75,6 +76,7 @@ function App() {
       /> */}
       <Time />
       <Destructuring />
+      <Todolist />
       <Footer />
 
   </div>
@@ -82,3 +84,8 @@ function App() {
 }
 
 export default App;
+
+//1. When new text is written into the input, its state should be saved.
+//2. When the add button is pressed, the current data in the input should be
+//added to an array.
+//3. The <ul> should display all the array items as <li>s
