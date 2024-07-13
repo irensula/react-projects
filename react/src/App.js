@@ -1,8 +1,6 @@
 import './App.css';
-import Header from './components/Header.jsx';
-import Note from './components/Note.jsx';
-import Footer from './components/Footer.jsx';
 
+import Keeper from './components/keeper_components/Keeper.jsx';
 import Greeting from './components/Greeting.jsx';
 import LuckyNumber from './components/LuckyNumber.jsx';
 import List from './components/List.jsx';
@@ -11,10 +9,9 @@ import Math from './components/Math.jsx';
 import Calculator from './components/Calculator.jsx';
 import Card from './components/Card.jsx';
 import contacts from './contacts.js';
-import notes from './notes.js';
 import Time from './components/Time.jsx';
 import Destructuring from './components/Destructuring.jsx';
-import Todolist from './components/Todolist.jsx';
+import Todolist from './components/todolist_components/Todolist.jsx';
 
 function createCard(contact) {
   return (
@@ -32,16 +29,7 @@ function createCard(contact) {
 function App() {
   return (
     <div>
-      <Header />
-
-      {notes.map(noteItem => 
-        (
-          <Note 
-            key={noteItem.key}
-            title={noteItem.title}
-            content={noteItem.content}
-          />
-        ))}
+      <Keeper />
 
       <Greeting />
     
@@ -77,15 +65,9 @@ function App() {
       <Time />
       <Destructuring />
       <Todolist />
-      <Footer />
 
   </div>
   );
 }
 
 export default App;
-
-//1. When new text is written into the input, its state should be saved.
-//2. When the add button is pressed, the current data in the input should be
-//added to an array.
-//3. The <ul> should display all the array items as <li>s

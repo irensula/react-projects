@@ -148,6 +148,17 @@ button {
   font-size: 50px;
 }
 /* Todolist CSS */
+.todolist {
+  background-color: #ffeaa7;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 130%;
+}
 .todolist-container {
   width: 100%;
   height: auto;
@@ -176,7 +187,7 @@ button {
   font-size: 1.5rem;
 }
 
-.todolist-form input {
+.todolist-input {
   box-sizing: border-box;
   background-color: transparent;
   padding: 0.7rem;
@@ -191,7 +202,7 @@ button {
   margin-bottom: 20px;
 }
 
-button {
+.todolist-button {
   padding: 0;
   border: none;
   font-family: "Architects Daughter", cursive;
@@ -200,17 +211,17 @@ button {
   border-radius: 5px;
   background-color: #ffeaa7;
 }
-button span {
+.todolist-span {
   background: #f1f5f8;
+  color: #000;
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 2px solid hsl(198, 1%, 29%);
 }
 
-li {
+.todolist-item {
   text-align: left;
   position: relative;
   padding: 0.5rem;
 }
-
