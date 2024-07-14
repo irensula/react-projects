@@ -8,7 +8,7 @@ function ToDoItem(props) {
                 props.onChecked(props.id);
         }}
         >
-            <li>{props.text}</li>
+            <li className="todolist-item">{props.text}</li>
         </div>
     );
 }

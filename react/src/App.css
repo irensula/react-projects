@@ -23,7 +23,8 @@ header {
 
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
+  padding-left: 30px;
+  font-family: "Architects Daughter", cursive;
   font-weight: 200;
 }
 
@@ -40,9 +41,8 @@ footer p {
 }
 /* Keeper */
 .keeper {
-  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  margin: 50px;
+  margin: 30px;
   width: 30%;
 }
 .note {
@@ -115,13 +115,12 @@ button.note-form  {
 /* Todolist CSS */
 .todolist {
   box-sizing: border-box;
-  margin: 50px;
+  margin: 30px;
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: hsl(198, 1%, 29%);
-  font-family: "Architects Daughter", cursive;
   text-align: center;
   font-size: 130%;
 }
@@ -140,6 +139,7 @@ button.note-form  {
   box-sizing: border-box;
 }
 .todolist-heading {
+  font-family: "Architects Daughter", cursive;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +161,6 @@ button.note-form  {
   border-bottom-left-radius: 3px 15px;
   border: solid 3px transparent;
   border-bottom: dashed 3px #fdcb6e;
-  font-family: "Architects Daughter", cursive;
   font-size: 1rem;
   color: hsla(260, 2%, 25%, 0.7);
   width: 70%;
@@ -189,15 +188,20 @@ button.note-form  {
 .todolist-item {
   text-align: left;
   position: relative;
-  padding: 0.5rem;
+  margin-left: 2em;
+  padding: 0.5rem 1em;
 }
 
 /* time */
+.side {
+  width: 30%;
+  margin: 30px auto;
+}
+.music {
+  margin: 100px 0 0 0;
+}
 h2 {
   font-size: 100px;
   line-height: 70px;
 }
 
-.time-container {
-  margin: 50px auto;
-}
