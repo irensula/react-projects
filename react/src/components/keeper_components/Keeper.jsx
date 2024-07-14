@@ -1,10 +1,7 @@
 import { useState } from "react";
-import './keeper.css';
 
-import Header from './Header.jsx';
 import Note from './Note.jsx';
 import CreateArea from "./CreateArea";
-import Footer from './Footer.jsx';
 
 function Keeper() {
     const [notes, setNotes] = useState([]);
@@ -25,7 +22,6 @@ function Keeper() {
 
     return(
         <div className="keeper">
-            <Header />
             <CreateArea onAdd={ addNote } />
             {notes.map((noteItem, index) => {
                 return (
@@ -37,7 +33,6 @@ function Keeper() {
                         onDelete={deleteNote} 
                     />)
                 })}
-            <Footer />
         </div>
     );
 }
