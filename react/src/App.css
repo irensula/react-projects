@@ -167,7 +167,7 @@ button.note-form  {
   margin-bottom: 20px;
 }
 
-.todolist-button {
+.button {
   padding: 0;
   border: none;
   font-family: "Architects Daughter", cursive;
@@ -176,7 +176,7 @@ button.note-form  {
   border-radius: 5px;
   background-color: #ffeaa7;
 }
-.todolist-span {
+span {
   background: #f1f5f8;
   color: #000;
   display: block;
@@ -198,10 +198,14 @@ button.note-form  {
   margin: 30px auto;
 }
 .music {
-  margin: 100px 0 0 0;
+  margin-top: 50px;
 }
 h2 {
   font-size: 100px;
   line-height: 70px;
 }
-
+/* quote */
+.quote p {
+  margin: 3em 0 1em 0;
+  font-size: 1.5em;
+}

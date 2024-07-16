@@ -57,7 +57,7 @@ function CreateArea(props) {
                 <Zoom in={isExpanded}>
                     <Fab 
                         onClick={submitNote} 
-                        sx={{background: "#f5ba13", left: "20rem"}}>
+                        sx={{background: "yellow", left: "20rem"}}>
                             <AddIcon />
                     </Fab>
                 </Zoom>

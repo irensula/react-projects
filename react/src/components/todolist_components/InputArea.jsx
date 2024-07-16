@@ -15,12 +15,12 @@ function InputArea(props) {
       onChange={handleChange} type="text" value={inputText} />
       
       <button
-            className="todolist-button"
+            className="button"
             onClick={() => {
             props.onAdd(inputText);
             setInputText("");
         }}>
-        <span className="todolist-span">Add</span>
+        <span>Add</span>
       </button>
     
     </div>
